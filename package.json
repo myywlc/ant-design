@@ -1,6 +1,6 @@
 {
-  "name": "antd",
-  "version": "4.0.0",
+  "name": "@myywlc/antd",
+  "version": "0.0.1",
   "description": "components list",
   "license": "MIT",
   "files": [
@@ -15,7 +15,9 @@
   "scripts": {
     "build": "npm run compile && npm run dist",
     "compile": "antd-tools run compile",
-    "dist": "antd-tools run dist"
+    "dist": "antd-tools run dist",
+    "deploy": "npm run build",
+    "postdeploy": "npm publish --access=public"
   },
   "browserslist": [
     "last 2 versions",
